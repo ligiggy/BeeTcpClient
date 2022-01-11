@@ -17,4 +17,4 @@ Bin/x64/*
 !Bin/x64/debug/
 !Bin/x64/release/
 
-
+Temp/
