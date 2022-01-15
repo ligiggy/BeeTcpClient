@@ -19,12 +19,11 @@ public:
     void connectServer(QString ip, int port);
     void disconnect();
 
+    bool isConnected();
+
     void writeMsg(QByteArray data);
 
     void readMsg(QByteArray &data);
-
-signals:
-    void isConnected(bool connected);
 
 private:
     void connect();

@@ -83,6 +83,11 @@ void BeeTcpClient::disconnect()
     threadTcp->wait();
 }
 
+bool BeeTcpClient::isConnected()
+{
+    return d_ptr->m_bConnected;
+}
+
 void BeeTcpClient::writeMsg(QByteArray data)
 {
     if(!d_ptr->m_bConnected)
